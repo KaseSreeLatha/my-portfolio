@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sree Latha Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Java Full Stack Developer</p>
+                <h1>Hi, I'm <span>Kase Sree Latha</span> From Tirupati</h1>
+            </div>
+        </div>
+    </div>
+    <!---------------- about ---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/user.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me...</h1>
+                    <div class="paragraph">
+                    <p>"Hello, I'm Kase Sree Latha, a Computer Science & Information Technology graduate from Siddharth Institute of Engineering and Technology in Puttur. 
+                        I hail from the beautiful city of Tirupati, and I'm proud to have achieved a Gold Medal in my B.Tech. 
+                        My technical skills encompass a wide array of technologies, including Core Java, JDBC, JSP, Servlets, Hibernate, Spring IOC, Spring MVC, Spring Boot, SQL, HTML, and CSS. 
+                        While I'm a fresher in the field without professional experience, I possess a strong ability to quickly adapt and learn new things. 
+                        Beyond my passion for technology, my hobbies include listening to music and engaging in research to quench my curiosity. 
+                        I believe that my technical skills and eagerness to learn make me well-equipped to thrive in the IT industry."
+                    </p>
+                    </div>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>JavaSE & JavaEE</span><br>Core java including OOps,Exceptions.<br>
+                            JDBC, Servelets, JSP, Hibernate, SpringIOC, SpringMVC, Spring boot</li>
+                            <li><span>SQL(RDBMS)</span><br>DML, DDL, DCL, DQL, TCL<br>
+                            Functions, SubQueries, Joins, Normalization, Views.</li>
+                            <li><span>Web Development</span><br>Web app Development<br>
+                            HTML, CSS, Java Script, Bootstrap...</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Fresher</span><br>As a fresher, I don't have any Experience.<br>
+                            But In my Graduation, I got <span>Gold Medal</span> from My Department(CS&IT).<br></li>
+                            <li><span>Academic Project:</span><br>
+                            <span>Project Title:</span>Emotion Recognition in voice using Deep Neural Network.<br>
+                        <span>Description:</span>Speech emotion recognition method which uses deep neuralnetworks for training.<br>
+                        The method uses Mel-frequency cepstral coefficients (MFCC),Chromogram, Mel scaled spectrogram in conjunction with 
+                        Spectral contrast and Tonal Centroid features to extract detailsabout an audio file.<br>
+                        The dataset used here is the Ryerson Audio-Visual Database ofEmotional Speech and Song (RAVDESS). We have only chosenthe 
+                        speech part which consists of 24 actors (gender balanced)with 1440 audio files.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-current</span><br>Java full stack development training in banglore.<br>
+                            from Jspiders, Marthahalli.</li>
+                            <li><span>2019-2023</span><br>Graduation(B.tech) from<br>
+                                Siddharth institute of engineering and technology(SIETK), Puttur.<br>
+                            with Aggregate of 9.37 CGPA</li>
+                            <li><span>2017-2019</span><br>Intermediate from A P Model College<br>
+                            with Aggreagate of 9.37 CGPA</li>
+                            <li><span>2016-2017</span><br>SSC from A P Model School<br>
+                            with Aggregate of 9.3 CGPA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------Services--------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>"Web design is like crafting a digital masterpiece. It's the art of creating beautiful and functional websites that not only catch the eye but also provide a seamless experience for users. 
+                        Just as an artist paints on a canvas, a web designer uses code, colors, and layout to shape the online world. 
+                        It's one of the best services because it bridges creativity and technology, 
+                        giving businesses and individuals a unique platform to showcase their ideas and connect with the world."</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>"UI/UX design is the magic behind a user-friendly digital experience. It's all about making websites and apps not only look fantastic but also function seamlessly. 
+                        UI (User Interface) design focuses on the visual aspects, ensuring that everything is easy on the eyes and intuitive to navigate. 
+                        On the other hand, UX (User Experience) design delves into the user's journey, creating paths that are smooth and enjoyable."</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>"App design is the magic that turns your mobile device into a window to endless possibilities. 
+                        It's the art of creating intuitive and visually appealing interfaces that make apps not just functional, but a joy to use. 
+                        It's one of the best services because it transforms ideas into digital experiences, enhancing our daily lives. 
+                        App design combines aesthetics and user-friendliness to shape the future of technology."</p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------Project------------ -->
+
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work-2.png">
+                    <div class="layer">
+                        <h3>Main Application</h3>
+                        <p>In this page only, we have to upload the audio file. The audio file must and should in .wav form
+                            <br>After uploading we need to submit the file. </p>
+                            <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-1.png">
+                    <div class="layer">
+                        <h3>Speech Emotion Recognition</h3>
+                        <p>Home page of the Speech Emotion Recognition. <br>
+                            Here only navigation is there to contact and to know more about the software.</p>
+                            <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-3.png">
+                    <div class="layer">
+                        <h3>Result page</h3>
+                        <p>In this page only we get the result of the audio file. After extracting the features, compare to the training results.
+                            <br>And get the reults and displayed in this page. </p>
+                            <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="project.html" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ----------Contact ---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>kasesreelatha002@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 9014743246</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/honeieee_queen/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/SreeGorgeous"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://github.com/KaseSreeLatha"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sree-latha-kase-560018229/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <button class="btn btn-2" onclick="location.href='Documents/Resume.pdf';">Resume</button>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet"> 
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy; Sree Latha. All rights reserved by Sree Latha Portfolio <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+<script>
+
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
+<script>
+
+    var sidemenu=document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw2haQuN5xL5szD4A15DwgDoCA7E3arDq0ZEjgF7cw-ijR8HvnXzY8wV7Vh0GzHQ0oeUQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent Successfully......"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>

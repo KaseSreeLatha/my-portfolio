@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+span{
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: dimgray;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav a:hover::after{
+    width: 100%;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+#project img{
+    height: 10%;
+    width: 40%;
+    margin-left: 25%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#process img{
+    height: 30%;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#project{
+    background-color: dimgrey;
+    color: white;
+}
+#description{
+    background-color:gainsboro;
+    border-radius: 20px;
+    color: black;
+}
+#process{
+    background-color: dimgrey;
+    color: white;
+}
+#prediction{
+    background-color:gainsboro;
+    border-radius: 20px;
+    color: black;
+}
+#results img{
+    height: 10%;
+    width: 40%;
+    margin-left: 25%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+#results section, #applications section{
+    background-color:gainsboro;
+    border-radius: 20px;
+    color: black;
+}
+#results, #applications{
+    background-color: dimgrey;
+    color: white;
+}

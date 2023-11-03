@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Project</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <h1>Kase Sree Latha</h1>
+        <p>Computer Science & Information Technology</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#results">Results</a></li>
+            <li><a href="#applications">Applications</a></li>
+        </ul>
+    </nav>
+    <section id="project">
+        <h1>Academic Project</h1>
+        <section id="description">
+        <h2>Emotion Recognition in voice using Deep Neural Network</h2>
+        <p><span>Project Description:</span> We propose a modified speech emotion recognition method which uses deep neural networks for training. 
+            The method uses Mel-frequency cepstral coefficients (MFCC), Chromogram, Mel scaled spectrogram in conjunction with Spectral contrast and Tonal Centroid features to extract details about an audio file. 
+            The features are used to train DNN model in a 5 layer deep neural network. The dataset used here is the Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS). 
+            We have only chosen the speech part which consists of 24 actors (gender balanced) with 1440 audio files. 
+            The model classifies the speech audio in different.</p>
+        <img src="Images/F1.png" alt="Project Screenshot">
+        </section>
+    </section>
+    <section id="process">
+        <h2>Process of Project</h2>
+        <section id="prediction">
+            <h3>Audio Emotion Prediction</h3>
+        
+            <p>Data Preprocessing is a technique used to clean and prepare raw audio data for analysis. This involves removing null values, handling duplicates, outliers, and converting categorical variables into numerical values. The dataset consists of 1440 audio files split into training (1008 files) and testing (432 files), with 70% of the data allocated to training.</p>
+        
+            <p>Deep learning, specifically a Deep Neural Network (DNN), with 5 layers, is employed for audio emotion prediction. The model extracts features like Mel-frequency cepstral coefficients (MFCC), Chromogram, Mel-scaled spectrogram, Spectral contrast, and Tonal Centroid.</p>
+        
+            <p>A Flask-based web application provides a user registration and login system. New users register with their name, email, and password, and this information is stored in a MySQL database. Registered users log in to the web app with their credentials.</p>
+        
+            <p>The Sequential() model is trained on the dataset for 700 epochs, and the model with the best test accuracy is chosen for prediction. The output layer uses softmax for emotion classification, converting logits into probabilities for generating results.</p>
+            <img src="Images/process.png" alt="Project Screenshot">
+        </section>
+        
+    </section>
+    <section id="results">
+        <h2>Results</h2>
+        <section id="home-page">
+            <h2>Home Page</h2>
+        
+            <p>The home page serves as the entry point for this project, offering users four main options:</p>
+        
+            <ul>
+                <li><strong>Home:</strong> Users can return to the home page from any section of the website.</li>
+                <li><strong>About Us:</strong> Provides information about the project and its creators.</li>
+                <li><strong>Contact Us:</strong> Users can reach out for inquiries or feedback.</li>
+                <li><strong>Log In:</strong> Registered users can access the system's features and predict speaker emotions.</li>
+            </ul>
+        
+            <img src="Images/work-1.png" alt="Home Page" />
+        
+            <p>The home page acts as a central hub for user navigation, facilitating exploration of the project's functionalities.</p>
+        </section> 
+        <section id="registration-page">
+            <h2>User Registration Page</h2>
+        
+            <p>The user registration and login management system in the UI allows new users to create accounts by providing their name, email, and password. The user information is stored in a MySQL database.</p>
+        
+            <img src="Images/reg.png" alt="Registration Page" />
+        </section>
+        <section id="user-login-page">
+            <h2>User Login Page</h2>
+        
+            <p>After successfully registering, users can log in using their email and password credentials.</p>
+        
+            <img src="Images/log.png" alt="Login Page" />
+        </section>
+        <section id="about-us-page">
+            <h2>About Us Page</h2>
+        
+            <p>The About Us page provides information about the project and serves to educate users about emotion recognition in the digital world.</p>
+        
+            <img src="Images/about.png" alt="About Us Page" />
+        </section>
+        <section id="application-page">
+            <h2>Application Page</h2>
+        
+            <p>In the Application page, users can choose and upload audio files of speakers or persons. The file extension must be in (.wav format). After uploading, they can submit the file using the provided submit button.</p>
+        
+            <img src="Images/work-2.png" alt="Application Page" />
+        
+            <p>After submitting the audio file, the system detects the speaker's emotion using the model, and the result is displayed on the screen.</p>
+            <img src="Images/work-3.png" alt="Application Page" />
+        </section>
+        <section id="contact-page">
+            <h2>Contact Page</h2>
+        
+            <p>The Contact Us page provides users with a convenient way to get in touch and allows for communication and assistance regarding the model. It includes the following elements:</p>
+        
+            <ul>
+                <li><strong>Name:</strong> Users can provide their name.</li>
+                <li><strong>Email:</strong> Users can enter their email address for responses.</li>
+                <li><strong>Phone Number:</strong> Users can provide their phone number for contact.</li>
+                <li><strong>Subject:</strong> Users can specify the subject of their inquiry or message.</li>
+                <li><strong>Message:</strong> Users can type a message with their questions or comments related to the model.</li>
+            </ul>
+        
+            <img src="Images/contact.png" alt="Contact Page" />
+        
+            <p>The Contact Us page is designed to facilitate communication and help address any problems or queries users may have regarding the emotion recognition model.</p>
+        </section>
+    </section>
+    <section id="applications">
+        <h2>Applications</h2>
+        <section id="emotion-recognition-applications">
+            <h2>Applications of Automatic Emotion Recognition</h2>
+        
+            <p>Automatic emotion recognition using speech has a wide range of applications, and it can significantly benefit different industries and fields:</p>
+        
+            <ul>
+                <li>Call centers can tailor their customer interaction strategies based on the detected emotions, providing more personalized and effective customer service.</li>
+                <li>In the field of E-Learning, schools and educational institutions can monitor the emotions of their students during online classes to better adapt and improve the education system for the students' benefit.</li>
+                <li>Robotics can utilize emotion detection to create robots that can interact with humans more effectively by understanding and responding to human emotions, enhancing the user experience.</li>
+                <li>Emotion detection plays a key role in Human-Computer Interaction (HCI), allowing computers and software to adapt their behavior based on the emotional state of the user, making interactions more intuitive and efficient.</li>
+            </ul>
+        
+            <p>These applications demonstrate the potential of emotion recognition technology to enhance human interactions and provide valuable insights in various domains.</p>
+        </section>
+        
+    </section>
+</body>
+</html>
